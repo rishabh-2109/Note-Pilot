@@ -1,9 +1,5 @@
-import React from 'react'
+import UploadForm from "./components/UploadForm.jsx";
 
-const App = () => {
-  return (
-    <div className='flex items-center justify-center text-8xl font-bold text-emerald-300 h-screen'>Welcome to the AI notes summarizer and sharer </div>
-  )
+export default function App() {
+  return <UploadForm />;
 }
-
-export default App
