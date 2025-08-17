@@ -1,8 +1,10 @@
+import dotenv from "dotenv";
+dotenv.config();
 import Groq from "groq-sdk";
 import Summary from "../models/Summary.js";
 
 // Initialize Groq client
-const groq = new Groq({ apiKey:"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"});
+const groq = new Groq({ apiKey:process.env.GROQ_API_KEY});
 
 
 export const generateSummary = async (req, res) => {
