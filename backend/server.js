@@ -3,18 +3,16 @@ import dotenv from "dotenv";
 dotenv.config();
 import cors from "cors";
 import mongoose from "mongoose";
-
 import uploadRoutes from "./routes/uploadRoutes.js";
 import summaryRoutes from "./routes/summaryRoutes.js";
 import emailRoutes from "./routes/emailRoutes.js";
-
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/upload", uploadRoutes);   // <-- Add this
+app.use("/api/upload", uploadRoutes);  
 app.use("/api/summary", summaryRoutes);
 app.use("/api/email", emailRoutes);
 
