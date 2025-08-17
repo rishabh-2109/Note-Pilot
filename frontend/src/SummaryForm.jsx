@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+const BASE_URL=import.meta.env.MODE==="development"?"http://localhost:5000/api/summary":"/api/summary";
+
 const SummaryForm = ({ transcript, setSummary }) => {
   const [instruction, setInstruction] = useState('');
   const [loading, setLoading] = useState(false);
@@ -9,7 +11,7 @@ const SummaryForm = ({ transcript, setSummary }) => {
   const handleGenerate = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/summary', { transcript, instruction });
+      const res = await axios.post({BASE_URL}, { transcript, instruction });
       setEditableSummary(res.data.summary); // <-- set editable
       setSummary(res.data.summary);
     } catch (err) {

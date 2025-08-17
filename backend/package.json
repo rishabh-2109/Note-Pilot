@@ -22,6 +22,7 @@
     "mongoose": "^8.17.1",
     "multer": "^2.0.2",
     "nodemailer": "^7.0.5",
+    "notes-summarizer": "file:..",
     "openai": "^5.12.2",
     "pdf-parse": "^1.1.1",
     "pdfjs-dist": "^5.4.54"

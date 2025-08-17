@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+const BASE_URL=import.meta.env.MODE==="development"?"http://localhost:5000/api/email":"/api/email";
 
 export default function EmailForm({ summary }) {
   const [to, setTo] = useState("");
@@ -8,7 +9,7 @@ export default function EmailForm({ summary }) {
 
   const handleSend = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/email", { to, subject, text: message });
+      const response = await axios.post({BASE_URL}, { to, subject, text: message });
       alert(response.data.message);
     } catch (err) {
       console.error("Send email error:", err.response?.data || err.message);

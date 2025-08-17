@@ -2,6 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import EmailForm from "./EmailForm.jsx";
 
+const BASE_URL=import.meta.env.MODE==="development"?"http://localhost:5000/api/summary":"/api/summary";
+const BASE_URL2=import.meta.env.MODE==="development"?"http://localhost:5000/api/upload":"/api/upload";
+
 export default function UploadForm() {
   const [transcript, setTranscript] = useState("");
   const [instruction, setInstruction] = useState("");
@@ -27,7 +30,7 @@ export default function UploadForm() {
 
       try {
         const uploadRes = await axios.post(
-          "http://localhost:5000/api/upload",
+          {BASE_URL2},
           formData,
           { headers: { "Content-Type": "multipart/form-data" } }
         );
@@ -45,7 +48,7 @@ export default function UploadForm() {
 
     // Generate summary
     try {
-      const response = await axios.post("http://localhost:5000/api/summary", {
+      const response = await axios.post({BASE_URL}, {
         transcript: finalTranscript,
         instruction,
       });
