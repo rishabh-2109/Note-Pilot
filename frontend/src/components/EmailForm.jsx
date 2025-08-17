@@ -9,7 +9,7 @@ export default function EmailForm({ summary }) {
 
   const handleSend = async () => {
     try {
-      const response = await axios.post({BASE_URL}, { to, subject, text: message });
+      const response = await axios.post(BASE_URL, { to, subject, text: message });
       alert(response.data.message);
     } catch (err) {
       console.error("Send email error:", err.response?.data || err.message);
