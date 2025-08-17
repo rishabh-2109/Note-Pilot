@@ -52,9 +52,9 @@ View and optionally email the summary.<br/>
 
 <br/>
 <br/>
-<img width="1400" height="800" alt="image" src="https://github.com/user-attachments/assets/afd142b4-60b5-4e80-afc1-499ecce218c6" />
+<img width="1400" height="700" alt="image" src="https://github.com/user-attachments/assets/afd142b4-60b5-4e80-afc1-499ecce218c6" />
 <br/>
 <br/>
-<img width="1400" height="800" alt="image" src="https://github.com/user-attachments/assets/69a93d03-0a21-4109-bd0b-6898c9f6996e" />
+<img width="1400" height="700" alt="image" src="https://github.com/user-attachments/assets/69a93d03-0a21-4109-bd0b-6898c9f6996e" />
 <br/>
 <br/>
