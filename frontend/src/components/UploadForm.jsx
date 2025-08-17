@@ -30,7 +30,7 @@ export default function UploadForm() {
 
       try {
         const uploadRes = await axios.post(
-          {BASE_URL2},
+          BASE_URL2,
           formData,
           { headers: { "Content-Type": "multipart/form-data" } }
         );
@@ -48,7 +48,7 @@ export default function UploadForm() {
 
     // Generate summary
     try {
-      const response = await axios.post({BASE_URL}, {
+      const response = await axios.post(BASE_URL, {
         transcript: finalTranscript,
         instruction,
       });

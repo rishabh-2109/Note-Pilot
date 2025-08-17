@@ -11,7 +11,7 @@ const SummaryForm = ({ transcript, setSummary }) => {
   const handleGenerate = async () => {
     setLoading(true);
     try {
-      const res = await axios.post({BASE_URL}, { transcript, instruction });
+      const res = await axios.post(BASE_URL, { transcript, instruction });
       setEditableSummary(res.data.summary); // <-- set editable
       setSummary(res.data.summary);
     } catch (err) {
