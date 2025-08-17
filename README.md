@@ -1,4 +1,4 @@
-Project Overview
+<b>Project Overview</b>
 
 Note-Pilot is an AI-powered meeting notes summarizer designed to help professionals quickly extract key points from meetings. Users can upload transcripts or paste text, generate structured summaries, and optionally send them via email for easy sharing and collaboration.
 
