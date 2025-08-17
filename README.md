@@ -2,8 +2,10 @@
 <br/>
 Note-Pilot is an AI-powered meeting notes summarizer designed to help professionals quickly extract key points from meetings. Users can upload transcripts or paste text, generate structured summaries, and optionally send them via email for easy sharing and collaboration.
 <br/>
-<br/>
+
 Live app deployed at: https://note-pilot.onrender.com/
+<br/>
+
 <br/>
 
 <b>Features-</b>
@@ -47,3 +49,12 @@ Upload a .txt transcript or paste the text.<br/>
 Enter optional instructions for the summary.<br/>
 Click Generate Summary.<br/>
 View and optionally email the summary.<br/>
+
+<br/>
+<br/>
+<img width="1400" height="800" alt="image" src="https://github.com/user-attachments/assets/afd142b4-60b5-4e80-afc1-499ecce218c6" />
+<br/>
+<br/>
+<img width="1400" height="800" alt="image" src="https://github.com/user-attachments/assets/69a93d03-0a21-4109-bd0b-6898c9f6996e" />
+<br/>
+<br/>
